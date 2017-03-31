@@ -1,0 +1,148 @@
+.archiveSelectWrapper {
+  width: 250px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.archiveHeader {
+  margin-bottom: 4px;
+}
+
+.archiveHeader:before,
+.archiveHeader:after {
+  content: " ";
+  display: table;
+}
+
+.archiveHeader:after {
+  clear: both;
+}
+
+.archiveTitle {
+  float: left;
+  margin: 0 !important;
+  font-size: 12px !important;
+  font-family: Helvetica, arial !important;
+  font-weight: bold !important;
+  color: #666 !important;
+}
+
+.pager {
+  float: right;
+}
+
+.pagerNext {
+  margin-left: 10px;
+}
+
+.pagerPrev,
+.pagerNext {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #888;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  text-decoration: none !important;
+}
+
+.pagerPrev:hover,
+.pagerNext:hover {
+  background-color: #f8f8f8;
+  text-decoration: none !important;
+}
+
+.pagerPrev:active,
+.pagerNext:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.archiveButton {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  font-size: 13px;
+  text-align: center;
+  background: #f8f8f8;
+  color: #888;
+}
+
+.archiveButton:hover,
+.archiveButton:focus {
+  background-color: #fff;
+  color: #888;
+}
+
+.archiveButton:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+label.archiveSelectLabel,
+label.archiveSelectLabel *,
+label.archiveSelectLabel:before,
+label.archiveSelectLabel:after {
+  box-sizing: border-box;
+}
+
+label.archiveSelectLabel {
+  position: relative;
+  display: inline-block;
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+label.archiveSelectLabel:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+  background: #f8f8f8;
+  pointer-events: none;
+  content: "";
+  border-left: 1px solid #ddd;
+}
+
+label.archiveSelectLabel:after {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  padding: 0 0 2px;
+  color: #aaa;
+  font: 11px "Consolas", monospace;
+  transform: rotate(90deg);
+  pointer-events: none;
+  content: "<>";
+}
+
+select.archiveSelect {
+  display: inline-block !important;
+  width: 100% !important;
+  height: 30px !important;
+  margin: 0 !important;
+  padding: 3px 10px !important;
+  padding-right: 28px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset !important;
+  background: #f8f8f8 !important;
+  color: #888 !important;
+  -webkit-appearance: none !important;
+  font-size: 13px !important;
+  font-weight: normal !important;
+}
